@@ -1,0 +1,47 @@
+body{
+  background: linear-gradient(to right,red,blue,yellow);
+}
+.cal{
+  justify-content: center;
+  margin-top:3px ;
+  display: grid;
+  grid-template-columns:repeat(4, 6rem); 
+  grid-template-rows:minmax(6rem, auto) repeat(5, 6rem);
+  justify-content: center;
+  
+}
+
+.output{
+grid-column: 1/ -1;
+margin-top:20px ;  
+border: 2px solid black;
+width: 341px;
+height: 50px;
+font-size: 40px;
+padding: 20px;
+background-color:rgb(230, 230, 70);
+border-radius: 10px;
+text-align: right;
+word-wrap: break-word;
+word-break: break-all;
+overflow-y:scroll;
+}
+.bottom{
+  grid-column: span 3;
+}
+button{
+  font-size: 30px;
+  background-color: rgb(43, 62, 235);
+  color: white;
+  border-radius: 20px;
+  margin: 2px;
+}
+button:hover{
+  background-color: white;
+  color: blue;
+  transition: 0.4s;
+}
+.result{
+  border: 3px solid black;
+  color: white;
+}
